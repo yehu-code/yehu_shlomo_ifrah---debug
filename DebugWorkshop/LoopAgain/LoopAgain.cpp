@@ -9,7 +9,7 @@ int main()
 	std::cout << "what is the size of the series? ";
 	std::cin >> size;
 
-	while (size >= 0)
+	while (size > 0)  // The variable "size" cannot contain negative numbers, so if you do <= you will have an infinite loop
 	{
 		std::cout << t1 << ", ";
 
