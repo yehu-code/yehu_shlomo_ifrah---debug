@@ -29,8 +29,10 @@ Point& Point::operator=(const Point& other)
 {
 	delete this->_coord;
 	this->_coord = new int[2];
+	this->_coord[0] = other._coord[0];
+	this->_coord[1] = other._coord[1];
 	//             dest,   source,    size
-	memcpy(this->_coord, other._coord, 2);      // copy operator
+	//memcpy(this->_coord, other._coord, 2);      // copy operator
 	return *this;
 }
 
